@@ -3,6 +3,7 @@ Uma proposta de Projeto de Rede (Projeto Lógico, Projeto Físico e Modelo de Si
 
 # Expecificações
 <b>Cliente</b>: Escola Pública de Educação Básica do Município
+
 <b>Objetivo</b>: Dimensionamento, instalação e configuração da rede lógica da escola.
 
 # Situação Física
