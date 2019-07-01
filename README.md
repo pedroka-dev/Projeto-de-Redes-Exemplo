@@ -69,3 +69,6 @@ Cada funcionário possui uma cota de disco de 10 Gb (existem 30 funcionários);
 •E-MAIL (SMTP e IMAP);
 
 
+# Pseudo-Planta da Escola para referencia
+![alt text](https://raw.githubusercontent.com/pedro-ca/Projeto-de-Redes-Exemplo/master/Piso%201.png)
+![alt text](https://raw.githubusercontent.com/pedro-ca/Projeto-de-Redes-Exemplo/master/Piso%202.png)
