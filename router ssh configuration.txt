@@ -1,24 +1,8 @@
-
-Router#configure terminal
-Enter configuration commands, one per line.  End with CNTL/Z.
-Router(config)#router rip
-Router(config-router)#
-
-         --- System Configuration Dialog ---
-
-Would you like to enter the initial configuration dialog? [yes/no]: n
-
-
-Press RETURN to get started!
-
-
-
 Router>enable
 Router#conf t
 Enter configuration commands, one per line.  End with CNTL/Z.
 Router(config)#interface gigabitethernet 0/0
 Router(config-if)#no shutdown
-
 Router(config-if)#
 %LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to up
 
@@ -30,45 +14,22 @@ ADMIN(config)#ip domain-name admin.com
 ADMIN(config)#crypto key generate rsa
 The name for the keys will be: ADMIN.admin.com
 Choose the size of the key modulus in the range of 360 to 2048 for your
-  General Purpose Keys. Choosing a key modulus greater than 512 may take
-  a few minutes.
+General Purpose Keys. Choosing a key modulus greater than 512 may take
+a few minutes.
 
 How many bits in the modulus [512]: 1024
 % Generating 1024 bit RSA keys, keys will be non-exportable...[OK]
 
 ADMIN(config)#
-*mar 1 0:3:26.678:  %SSH-5-ENABLED: SSH 1.99 has been enabled 
-ADMIN(config)#ssh?
-% Unrecognized command
-ADMIN(config)#ssh?
-% Unrecognized command
-ADMIN(config)#ip ssh?
-ssh  
-ADMIN(config)#ip ssh ?
-  authentication-retries  Specify number of authentication retries
-  time-out                Specify SSH time-out interval
-  version                 Specify protocol version to be supported
-ADMIN(config)#ip ssh version ?
-  <1-2>  Protocol version
+*mar 1 0:3:26.678:  %SSH-5-ENABLED: SSH 1.99 has been enabled
 ADMIN(config)#ip ssh version 2
-ADMIN(config)#ip ssh authentication-retries ?
-  <0-5>  Number of authentication retries
 ADMIN(config)#ip ssh authentication-retries 3
 ADMIN(config)#ip ssh time-out 30
 ADMIN(config)#username cisco privilege 15 password cisco 123
-ADMIN(config)#line vt 0 4
-ADMIN(config-line)#exit
 ADMIN(config)#line vty 0 4
 ADMIN(config-line)#login local
 ADMIN(config-line)#privilege level 15
-ADMIN(config-line)#transport input ?
-  all     All protocols
-  none    No protocols
-  ssh     TCP/IP SSH protocol
-  telnet  TCP/IP Telnet protocol
 ADMIN(config-line)#transport input ssh
 ADMIN(config-line)#end
 ADMIN#
 %SYS-5-CONFIG_I: Configured from console by console
-
-ADMIN#
