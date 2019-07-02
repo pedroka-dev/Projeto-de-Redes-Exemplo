@@ -45,8 +45,7 @@ Uma proposta de Projeto de Rede (Projeto Lógico, Projeto Físico e Modelo de Si
 
 
 # Situação Lógica
-Deve haver um rede cabeada ligando os computadores e outra rede sem fio
-disponibilizada nos corredores e salas de aula. 
+Cabeada ligando os computadores e rede sem fio disponibilizada nos corredores e salas de aula. 
 Serviços disponíveis:
 
 •DHCP
@@ -57,7 +56,7 @@ Serviços disponíveis:
 
 •SSH
 
-•E-MAIL (SMTP e);
+•E-MAIL (SMTP);
 
 
 # Pseudo-Planta da Escola para referencia
