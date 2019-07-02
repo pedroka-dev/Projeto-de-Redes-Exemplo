@@ -6,6 +6,9 @@ Uma proposta de Projeto de Rede (Projeto Lógico, Projeto Físico e Modelo de Si
 
 <b>Objetivo</b>: Dimensionamento, instalação e configuração da rede lógica da escola.
 
+# Topologia (Packet Tracer)
+![alt text](https://raw.githubusercontent.com/pedro-ca/Projeto-de-Redes-Exemplo/master/Imagens/topologia%20completa.JPG)
+
 # Situação Física
 
 <b>Secretaria (Piso 1)</b>: 
@@ -56,9 +59,6 @@ Serviços disponíveis:
 
 •E-MAIL (SMTP e);
 
-
-# Topologia Completa (Packet Tracer)
-![alt text](https://raw.githubusercontent.com/pedro-ca/Projeto-de-Redes-Exemplo/master/Imagens/topologia%20completa.JPG)
 
 # Pseudo-Planta da Escola para referencia
 ![alt text](https://raw.githubusercontent.com/pedro-ca/Projeto-de-Redes-Exemplo/master/Imagens/pseudoplanta%20piso%201.png)
