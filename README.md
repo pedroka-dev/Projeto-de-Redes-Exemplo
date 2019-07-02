@@ -68,7 +68,13 @@ Cada funcionário possui uma cota de disco de 10 Gb (existem 30 funcionários);
 
 •E-MAIL (SMTP e IMAP);
 
+# Topologia Completa (Packet Tracer)
+![alt text](https://raw.githubusercontent.com/pedro-ca/Projeto-de-Redes-Exemplo/master/Imagens/topologia%20completa.JPG)
 
 # Pseudo-Planta da Escola para referencia
 ![alt text](https://raw.githubusercontent.com/pedro-ca/Projeto-de-Redes-Exemplo/master/Imagens/pseudoplanta%20piso%201.png)
 ![alt text](https://raw.githubusercontent.com/pedro-ca/Projeto-de-Redes-Exemplo/master/Imagens/pseudoplanta%20piso%202.png)
+
+
+
+
