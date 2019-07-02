@@ -70,5 +70,5 @@ Cada funcionário possui uma cota de disco de 10 Gb (existem 30 funcionários);
 
 
 # Pseudo-Planta da Escola para referencia
-![alt text](https://raw.githubusercontent.com/pedro-ca/Projeto-de-Redes-Exemplo/master/Piso%201.png)
-![alt text](https://raw.githubusercontent.com/pedro-ca/Projeto-de-Redes-Exemplo/master/Piso%202.png)
+![alt text](https://raw.githubusercontent.com/pedro-ca/Projeto-de-Redes-Exemplo/master/Imagens/pseudoplanta%20piso%201.png)
+![alt text](https://raw.githubusercontent.com/pedro-ca/Projeto-de-Redes-Exemplo/master/Imagens/pseudoplanta%20piso%202.png)
