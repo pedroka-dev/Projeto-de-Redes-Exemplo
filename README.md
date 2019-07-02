@@ -43,16 +43,8 @@ Uma proposta de Projeto de Rede (Projeto Lógico, Projeto Físico e Modelo de Si
 
 # Situação Lógica
 Deve haver um rede cabeada ligando os computadores e outra rede sem fio
-disponibilizada nos corredores e salas de aula. Estas redes devem ser logicamente
-separadas, sendo a rede cabeada exclusiva para os funcionários e a rede sem fio
-acessível aos alunos. Devem ser implementados firewalls internos e externos;
-
-Cada funcionário ou aluno deve realizar o login na rede com um usuário próprio e único;
-
-Cada funcionário possui uma cota de disco de 10 Gb (existem 30 funcionários);
-
-
-# Devem rodar pelo menos os seguintes serviços:
+disponibilizada nos corredores e salas de aula. 
+Serviços disponíveis:
 
 •DHCP
 
@@ -60,13 +52,10 @@ Cada funcionário possui uma cota de disco de 10 Gb (existem 30 funcionários);
 
 •Server DNS
 
-•LDAP
-
 •SSH
 
-•SAMBA
+•E-MAIL (SMTP e);
 
-•E-MAIL (SMTP e IMAP);
 
 # Topologia Completa (Packet Tracer)
 ![alt text](https://raw.githubusercontent.com/pedro-ca/Projeto-de-Redes-Exemplo/master/Imagens/topologia%20completa.JPG)
