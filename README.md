@@ -8,7 +8,7 @@ Uma proposta de Projeto de Rede (Projeto Lógico, Projeto Físico e Modelo de Si
 
 # Sales Pitch
 
-Este projeto de rede tem como foco oequilibrio entre performance e custo, se adaptando as necessidades do cliente, visando a escalabilidade e providenciando diversas opções financeiras, enquanto ainda mantem qualidade e performance de rede. 
+Este projeto de rede tem como foco o equilibrio entre performance e custo, se adaptando as necessidades do cliente, visando a escalabilidade e providenciando diversas opções financeiras, enquanto ainda mantem qualidade e performance de rede. 
 
 Diversos serviços são disponibilizados, como configuração automatica de IP em novos dispositivos da rede, implementação de um servidor para websites, email customizavel com domínio da escola, entre outros.
 
@@ -27,52 +27,39 @@ A rede após sua implemtanção não só possuirá cabeamento funcional e altame
 
 # Requisitos Iniciais: Situação Física
 
-<b>Secretaria (Piso 1)</b>: 
+  - <b>Secretaria (Piso 1)</b>: 
 
-•2 computadores
+    - 2 computadores
+    - 1 impressora de rede (laser).
 
-•1 impressora de rede (laser).
 
-
-<b>Direção (Piso 1)</b>: 
-
-•1 computador
-
-•1 impressora jato de tinta.
+  - <b>Direção (Piso 1)</b>: 
+    - 1 computador
+    - 1 impressora jato de tinta.
  
  
-<b>Corredores 1 e 2 (Piso 1)</b>: 
-
-•50 metros de comprimento cada corredor
-
-•8 salas de aula em cada corredor.
+  - <b>Corredores 1 e 2 (Piso 1)</b>: 
+    - 50 metros de comprimento cada corredor
+    - 8 salas de aula em cada corredor.
 
 
-<b>Corredores 3 e 4 (Piso 2)</b>: 
-
-•50 metros de comprimento cada corredor 
-
-•8 salas de aula em cada corredor.
+  - <b>Corredores 3 e 4 (Piso 2)</b>: 
+    - 50 metros de comprimento cada corredor 
+    - 8 salas de aula em cada corredor.
 
 
-<b>Laboratório de Informática</b>: 
-
-•30 computadores.
+  - <b>Laboratório de Informática</b>: 
+    - 30 computadores.
 
 
 # Requisitos Iniciais: Situação Lógica
 Cabeada ligando os computadores e rede sem fio disponibilizada nos corredores e salas de aula. 
 Serviços disponíveis:
-
-•DHCP
-
-•WEB
-
-•Server DNS
-
-•SSH
-
-•E-MAIL (SMTP);
+  - DHCP
+  - WEB
+  - Server DNS
+  - SSH
+  - E-MAIL (SMTP);
 
 
 # Pseudo-Planta da Escola para referencia
@@ -83,40 +70,54 @@ Serviços disponíveis:
 ---
 
 # Análise: Situação Física
+*TOPOLOGIA DE CABEAMENTO*: Cabeamento
 
-    • TOPOLOGIA DE CABEAMENTO: Cabeamento
-    • CABOS UTILIZADOS:
-        ◦ Cabeamento Backbone: Fibra Monomodo(+ Conversores de Mídia de Fibra Óptica); Como o Cabeamento Backbone não é tão extensivo em termos de comprimento, a Fibra Monomodo se torna uma opção viável(Não serão necessários muito mais do que 10m de fibra);
-            ▪ Alternativa: Cabo STP Cat6; Preço mais acessível, sem muita perda na performance. Denovo, para o Cabeamento Backbone(Vertical), não é necessário muito comprimento de cabo.
-        ◦ Cabeamento Horizontal: UTP/STP Cat6, levando como preferência STP para áreas com muita interferência e UTP para áreas com pouca interferência.
-            ▪ STP se torna a opção mais viável para todo o projeto, devido a quantidade imensa de dispositivos telefônicos + dispositivos com acesso a tecnologias Wireless em 2.4GHz.
-    • TECNOLOGIAS:
-        ◦ Gigabit Ethernet: Fast Ethernet está virando uma tecnologia legado. Com isso em mente, é mais lucro visar a implementação de tecnologias GigabitEthernet e 10GigabitEthernet para poder tomar mais proveito disso no futuro, sem ter que ser necessário uma reforma nessa área; Contudo, o Gigabit Ethernet não precisa ser utilizado em todo o projeto.
-            ▪ DISCREPÂNCIA: O projeto lógico foi feito em majoritariamente com FastEthernet; Em um contexto de vida real, onde foi usado GigabitEthernet no projeto do PacketTracer pode ser substitudo pela tecnologia 10GigabitEthernet, e onde foi usado FastEthernet, GigabitEthernet.
-            ▪ A tecnologia 10GigabitEthernet requer cabos adequados para a sua implementação, aumentando em mais ainda o custo do projeto (Normalmente requer fibra multimodo ou monomodo);
-        ◦ Tecnologia WAN: Não definida. (Depende muito do Provedor de Serviços de Internet);
-    • EQUIPAMENTOS:
-        ◦ Preço total médio: R$7,812.50;
-        ◦ ATIVOS:
-            ▪ NoBreak(1 un):
+*CABOS UTILIZADOS*
+  - Cabeamento Backbone: Fibra Monomodo(+ Conversores de Mídia de Fibra Óptica); Como o Cabeamento Backbone não é tão extensivo em termos de comprimento, a Fibra Monomodo se torna uma opção viável(Não serão necessários muito mais do que 10m de fibra);
+    - Alternativa: Cabo STP Cat6; Preço mais acessível, sem muita perda na performance. Para o Cabeamento Backbone(Vertical), não é necessário muito comprimento de cabo.
+  - Cabeamento Horizontal: UTP/STP Cat6, levando como preferência STP para áreas com muita interferência e UTP para áreas com pouca interferência.
+    - STP se torna a opção mais viável para todo o projeto, devido a quantidade imensa de dispositivos telefônicos + dispositivos com acesso a tecnologias Wireless em 2.4GHz.
+    
+*TECNOLOGIAS*:
+ - Gigabit Ethernet: Fast Ethernet está virando uma tecnologia legado. Com isso em mente, é mais lucro visar a implementação de tecnologias GigabitEthernet e 10GigabitEthernet para poder tomar mais proveito disso no futuro, sem ter que ser necessário uma reforma nessa área; Contudo, o Gigabit Ethernet não precisa ser utilizado em todo o projeto.
+    - DISCREPÂNCIA: O projeto lógico foi feito em majoritariamente com FastEthernet; Em um contexto de vida real, onde foi usado GigabitEthernet no projeto do PacketTracer pode ser substitudo pela tecnologia 10GigabitEthernet, e onde foi usado FastEthernet, GigabitEthernet.
+    - A tecnologia 10GigabitEthernet requer cabos adequados para a sua implementação, aumentando em mais ainda o custo do projeto (Normalmente requer fibra multimodo ou monomodo);
+ - Tecnologia WAN: Não definida. (Depende muito do Provedor de Serviços de Internet);
+        
+        
+*EQUIPAMENTOS*:
+ - Preço total médio: R$7,812.50;
+ - ATIVOS:
+   - NoBreak(1 un):
+   
                 • ~R$500;
                 • Necessário para o server e para os equipamentos mais importantes.
-            ▪ Access Points(2un no projeto):
+                
+   - Access Points(2un no projeto):
+   
                 • UAP AC Lite - R$600 Distância: 122m, 300 Mbps(2,4GHz), 867Mbps(5GHz);
                 • UAP AC LR - R$800; Distância: 183m, 450 Mbps(2,4GHz), 867Mbps(5Ghz);
                 • Alternativa: Repetidores; Repetidores são alternativas de custo menor aos Access Points. Seriam necessários 4 repetidores ao todo para cobrir todos os 4 corredores.
-            ▪ Roteador(1un no projeto):
+                
+   - Roteador(1un no projeto):
+   
                 • R$50-300;
-            ▪ Server(1un no projeto):
+                
+   - Server(1un no projeto):
+   
                 • R$2,200-5,000;
                 • Alternativa: Empresas de hospedagem de servidores dedicados/não dedicados(Preço é dado mensalmente, através de uma assinatura);
                 • Alternativa: Computador com um server; Mais eficiente em termos de custo.
-            ▪ Switch(3un* no projeto):
+                
+   - Switch(3un* no projeto):
+   
                 • 16 Portas Cat6: R$150-400;
                 • 24 Portas Cat6: R$300-600;
                 • 48 Portas Cat6: ~R$1000;
                 • *Devem haver switches suficientes para acomodarem em torno de 40 cabos; 30 computadores no laboratório, 10 para o resto do projeto.
-            ▪ PASSIVOS:
+                
+   - Passivos:
+   
                 • Rack(2un):
                     ◦ R$250-500;
                 • Patch Panel(2un):
@@ -132,6 +133,7 @@ Serviços disponíveis:
                         ▪ R$40 por 10m;
                     ◦ Cabo STP Cat6:
                         ▪ R$250 por 150m; R$200 por 100m;
+                        
 
 # Análise: Situação Lógica 
 
@@ -181,67 +183,40 @@ Serviços disponíveis:
 Configurações realizadas no CLI do terminal:
 <details>
  
-Router>enable
- 
-Router#conf t
- 
-Enter configuration commands, one per line.  End with CNTL/Z.
- 
-Router(config)#interface gigabitethernet 0/0
- 
-Router(config-if)#no shutdown
- 
-Router(config-if)#
- 
-%LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to up
+    Router>enable
+    Router#conf t
+    Enter configuration commands, one per line.  End with CNTL/Z.
+    Router(config)#interface gigabitethernet 0/0
+    Router(config-if)#no shutdown
+    Router(config-if)#
+    %LINK-5-CHANGED: Interface GigabitEthernet0/0, changed state to up
 
+    %LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
 
-%LINEPROTO-5-UPDOWN: Line protocol on Interface GigabitEthernet0/0, changed state to up
+    Router(config-if)#exit
+    Router(config)#hostname ADMIN
+    ADMIN(config)#ip domain-name admin.com
+    ADMIN(config)#crypto key generate rsa
 
+    The name for the keys will be: ADMIN.admin.com
+    Choose the size of the key modulus in the range of 360 to 2048 for your	General Purpose Keys. Choosing a key modulus greater than 512 may take a few minutes.
 
-Router(config-if)#exit
+    How many bits in the modulus [512]: 1024
+    % Generating 1024 bit RSA keys, keys will be non-exportable...[OK]
 
-Router(config)#hostname ADMIN
-
-ADMIN(config)#ip domain-name admin.com
-
-ADMIN(config)#crypto key generate rsa
-
-The name for the keys will be: ADMIN.admin.com
-
-Choose the size of the key modulus in the range of 360 to 2048 for your	General Purpose Keys. Choosing a key modulus greater than 512 may take a few minutes.
-
-How many bits in the modulus [512]: 1024
-
-% Generating 1024 bit RSA keys, keys will be non-exportable...[OK]
-
-
-ADMIN(config)#
-
-*mar 1 0:3:26.678:  %SSH-5-ENABLED: SSH 1.99 has been enabled
-
-ADMIN(config)#ip ssh version 2
-
-ADMIN(config)#ip ssh authentication-retries 3
-
-ADMIN(config)#ip ssh time-out 30
-
-ADMIN(config)#username cisco privilege 15 password cisco 123
-
-ADMIN(config)#line vty 0 4
-
-ADMIN(config-line)#login local
-
-ADMIN(config-line)#privilege level 15
-
-ADMIN(config-line)#transport input ssh
-
-ADMIN(config-line)#end
-
-ADMIN#
-
-%SYS-5-CONFIG_I: Configured from console by console
-
+    ADMIN(config)#
+    *mar 1 0:3:26.678:  %SSH-5-ENABLED: SSH 1.99 has been enabled
+    ADMIN(config)#ip ssh version 2
+    ADMIN(config)#ip ssh authentication-retries 3
+    ADMIN(config)#ip ssh time-out 30
+    ADMIN(config)#username cisco privilege 15 password cisco 123
+    ADMIN(config)#line vty 0 4
+    ADMIN(config-line)#login local
+    ADMIN(config-line)#privilege level 15
+    ADMIN(config-line)#transport input ssh
+    ADMIN(config-line)#end
+    ADMIN#
+    %SYS-5-CONFIG_I: Configured from console by console
 </details>
   
 
